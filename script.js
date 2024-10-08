@@ -1,3 +1,5 @@
+// Observer for container-two
+
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".container-two");
 
