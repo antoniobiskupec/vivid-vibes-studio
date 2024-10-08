@@ -1,0 +1,251 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+  /* background-image: url(./images/main-bg.svg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --navbar-height: 80px;
+}
+
+/* general */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* primary header */
+
+.logo {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.book-nav {
+  font-size: 1.5rem;
+  margin-inline-end: 2rem;
+  padding: 0.4rem;
+}
+
+.book-nav:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.social {
+  font-size: 1.5rem;
+  margin-inline-end: 2rem;
+  border: 1px solid black;
+  padding: 0.4rem;
+}
+
+.social:hover {
+  background-color: black;
+  color: white;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.primary-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+  height: var(--navbar-height);
+  align-items: center;
+}
+
+.container {
+  background: url(./images/main-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding: 3rem;
+  height: calc(100dvh - var(--navbar-height));
+}
+
+.main-one-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.main-one-left img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.main-one-right span {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.main-one-right-bold {
+  font-weight: 900;
+}
+
+.book-button {
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  font-size: large;
+  background-color: black;
+}
+.book-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.container-two {
+  height: 100dvh;
+  background-color: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-out;
+}
+
+.container-two.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grid-item-top {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+}
+
+.grid-item {
+  border: 1px solid white;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item > p {
+  padding: 0.5rem;
+}
+.heart-icon {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .book-nav {
+    font-size: 1.2rem;
+    margin-inline-end: 2rem;
+    padding: 0.4rem;
+    display: none;
+  }
+
+  .social {
+    font-size: 1.5rem;
+    margin-inline-end: 2rem;
+    border: 1px solid black;
+    padding: 0.4rem;
+    display: none;
+  }
+
+  .hamburger-menu {
+  }
+}
