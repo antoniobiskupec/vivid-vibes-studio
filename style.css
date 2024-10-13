@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -79,6 +80,7 @@ a {
 /* general */
 .flex {
   display: flex;
+  align-items: center;
 }
 
 .grid {
@@ -88,19 +90,41 @@ a {
 /* primary header */
 
 .logo {
-  margin: 1rem;
   font-size: 1.5rem;
   font-weight: 900;
+  color: white;
+  margin-left: 2rem;
+}
+
+.logo-small-text {
+  color: white;
+  margin-left: 2rem;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin-inline-end: 2rem;
+  padding: 0.4rem;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(134, 4, 100);
+  transition: all 0.2s ease-out;
+  border-radius: 5px;
 }
 
 .book-nav {
   font-size: 1.5rem;
   margin-inline-end: 2rem;
   padding: 0.4rem;
+  color: white;
+  background-color: rgb(134, 4, 100);
+  border-radius: 5px;
 }
 
 .book-nav:hover {
-  background-color: black;
+  background-color: rgb(134, 4, 100);
   color: white;
   cursor: pointer;
 }
@@ -108,24 +132,27 @@ a {
 .social {
   font-size: 1.5rem;
   margin-inline-end: 2rem;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 0.4rem;
+  color: white;
 }
 
 .social:hover {
-  background-color: black;
+  background-color: rgb(134, 4, 100);
   color: white;
+  transition: all 0.2s ease-out;
 }
 
 .primary-header {
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(8, 8, 8, 0.5);
   backdrop-filter: blur(0.4rem);
   -webkit-backdrop-filter: blur(0.4rem);
   position: sticky;
   top: 0;
   z-index: 9999;
+  box-shadow: 0 4px 6px rgba(163, 5, 121, 0.15);
 }
 
 .primary-nav {
@@ -159,6 +186,7 @@ a {
   width: 100%;
   height: auto;
   max-width: 100%;
+  filter: grayscale(100%);
 }
 
 .main-one-right span {
@@ -178,8 +206,9 @@ a {
   background-color: black;
 }
 .book-button:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  border: solid 1px white;
+  background-color: rgb(134, 4, 100);
 }
 
 .container-two {
@@ -189,7 +218,6 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
-  opacity: 0;
   transform: translateY(50px);
   transition: all 2s ease-out;
 }
@@ -222,6 +250,7 @@ a {
   color: rgb(15, 15, 15);
   scale: 1.03;
   transition: all 0.4s linear;
+  cursor: default;
 }
 
 .grid-item > p {
@@ -230,6 +259,55 @@ a {
 
 .heart-icon {
   font-size: 2.5rem;
+}
+
+.image-container {
+  width: min(1110px, 100%);
+  margin: 0 auto;
+  margin-top: 2rem;
+  columns: 3 250px;
+  column-gap: 1em;
+}
+
+.item-column {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.container-four {
+  width: min(1110px, 100%);
+  margin: 0 auto;
+  color: white;
+  display: grid;
+  column-gap: 0px;
+  row-gap: 1rem;
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.cijena-item {
+  text-align: start;
+}
+
+.cijena-bold {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: rgb(134, 4, 100);
+  text-align: center;
+}
+
+.bold-naslov {
+  color: rgb(134, 4, 100);
+  font-size: 2rem;
+}
+
+/* Contact form  */
+
+.container-contact {
+  width: min(1110px, 100%);
+  margin: 0 auto;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
