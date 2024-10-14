@@ -355,6 +355,25 @@ a {
   transform: translateY(0); /* Bring it to the final position */
 }
 
+.footer-full {
+  background-color: black;
+}
+
+.container-footer {
+  width: min(1110px, 100%);
+  margin: 0 auto;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
 /* Contact form  */
 
 .container-contact {
