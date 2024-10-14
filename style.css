@@ -30,6 +30,7 @@ body {
   background-position: center;
   font-family: "Quicksand", sans-serif;
   background: black;
+  font-size: 1.05rem;
 }
 
 /*
@@ -178,6 +179,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
   padding: 4rem;
   gap: 3rem;
 }
