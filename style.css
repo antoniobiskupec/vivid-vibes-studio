@@ -374,6 +374,10 @@ a {
   padding: 0.5rem;
 }
 
+.footer-social > li > a:hover {
+  color: rgb(134, 4, 100);
+}
+
 /* Contact form  */
 
 .container-contact {
