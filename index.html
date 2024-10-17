@@ -43,15 +43,12 @@
       </nav>
     </header>
     <main>
-      <div id="top" class="container">
-        <div class="main-one-left">
+      <div id="top vanta-container" class="container">
+        <!-- <div class="main-one-left">
           <img src="./images/main2.jpg" />
-        </div>
+        </div> -->
         <div class="main-one-right flex">
-          <span>Your</span>
-          <span>body</span>
-          <span>is</span>
-          <span class="main-one-right-bold">ART.</span>
+          <h2>Welcome to our little world</h2>
           <div>
             <a class="book-button" href="./book.html">Rezerviraj Termin</a>
           </div>
@@ -311,5 +308,20 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Include Vanta.js and Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
+    <script>
+      VANTA.CLOUDS({
+        el: "#vanta-container", // Target the container
+        skyColor: 0x1a2a6c, // Customize the sky color
+        cloudColor: 0xdcdcdc, // Customize the cloud color
+        cloudShadowColor: 0x000000, // Cloud shadow color
+        sunColor: 0xffdd00, // Sun color
+        sunGlareColor: 0xffcc00, // Sun glare
+        speed: 1.0, // Speed of cloud movement
+      });
+    </script>
   </body>
 </html>

@@ -363,9 +363,10 @@ a {
   width: min(1110px, 100%);
   margin: 0 auto;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
+  font-size: 1.1rem;
 }
 
 .footer-social {
@@ -386,5 +387,8 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
 }
