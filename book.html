@@ -6,26 +6,131 @@
     <title>Vivid Vibes | Book A Session</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container-contact">
-      <h3>
-        Za više informacija i dogovor oko termina možeš nas kontaktirati na:
-      </h3>
-      <a>
-        <ion-icon name="logo-whatsapp"></ion-icon>
-      </a>
-      <a>
-        <ion-icon name="mail-outline"></ion-icon>
-      </a>
-      <a>
-        <ion-icon name="call-outline"></ion-icon>
-      </a>
-    </div>
-    <div class="container-contact flex">
-      <ion-icon name="home-outline"></ion-icon>
-      <p>Kozjačić 4</p>
-    </div>
+    <header class="primary-header flex">
+      <div>
+        <p class="logo">Vivid Vibes</p>
+        <p class="logo-small-text">Tattoo Studio</p>
+      </div>
+      <nav>
+        <ul class="primary-nav flex">
+          <li class="nav-item"><a href="./index.html#top">Početna</a></li>
+          <li class="nav-item"><a href="./index.html#cijene">Cijene</a></li>
+          <li class="book-nav"><a href="./book.html">Rezerviraj Termin</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/vivid.vibes_tattoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+            >
+              <ion-icon class="social" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61566425155277"
+              target="_blank"
+              ><ion-icon class="social" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container-contact">
+        <div class="image-stack">
+          <img src="./images/studio.JPG" alt="studio image" />
+          <img src="./images/studio2.JPG" alt="studio image" />
+          <img src="./images/studio3.JPG" alt="studio image" />
+          <img src="./images/studio4.JPG" alt="studio image" />
+          <img src="./images/studio5.JPG" alt="studio image" />
+        </div>
+        <div class="contact-info-container">
+          <h3>
+            Za više informacija i dogovor oko termina možeš nas kontaktirati na:
+          </h3>
+          <a
+            class="flex contact-button"
+            href="https://wa.me/385958747469"
+            target="_blank"
+          >
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <p>WhatsApp</p>
+          </a>
+          <a class="flex contact-button" href="mailto:info@vivid-vibes.hr">
+            <ion-icon name="mail-outline"></ion-icon>
+            <p>info@vivid-vibes.hr</p>
+          </a>
+          <a class="flex contact-button" href="tel:+385958747469">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>Nazovi nas na: <strong>+385 95 8747 469</strong></p>
+          </a>
+          <a
+            class="flex contact-button"
+            href="https://www.google.com/maps/search/?api=1&query=Kozjačić+4"
+            target="_blank"
+          >
+            <ion-icon name="home-outline"></ion-icon>
+            <p>Nalazimo se na: <strong>Kozjačiċ 4</strong></p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-full-white">
+        <div class="container-footer-white">
+          <div>
+            <ul class="contact-info">
+              <li class="flex">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:info@vivid-vibes.hr">info@vivid-vibes.hr</a>
+              </li>
+              <li class="flex">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+385958747469">+385 95 8747 469</a>
+              </li>
+              <li class="flex">
+                <ion-icon name="home-outline"></ion-icon>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Kozjačić+4"
+                  target="_blank"
+                >
+                  <p>Kozjačić 4</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Follow us</p>
+            <ul class="footer-social">
+              <li>
+                <a
+                  href="https://www.instagram.com/vivid.vibes_tattoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566425155277"
+                  target="_blank"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       type="module"
