@@ -14,38 +14,41 @@
     />
   </head>
   <body>
+    <!-- Navbar and hamburger menu -->
     <header class="primary-header flex">
-      <div class="logo-container">
-        <p class="logo">Vivid Vibes</p>
-        <p class="logo-small-text">Tattoo Studio</p>
+      <div class="logo">
+        <h3>Vivid Vibes</h3>
       </div>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+
       <nav>
-        <ul class="primary-nav flex">
-          <li class="nav-item"><a href="#top">Početna</a></li>
-          <li class="nav-item"><a href="#cijene">Cijene</a></li>
-          <li class="book-nav"><a href="./book.html">Rezerviraj Termin</a></li>
-          <li>
-            <a
-              href="https://www.instagram.com/vivid.vibes_tattoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-            >
-              <ion-icon class="social" name="logo-instagram"></ion-icon>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a href="#top"><span aria-hidden="true">00</span>Početna </a>
+          </li>
+          <li class="active">
+            <a href="#cijene"><span aria-hidden="true">01</span>Cijene </a>
+          </li>
+          <li class="active">
+            <a href="./book.html"
+              ><span aria-hidden="true">02</span>Rezerviraj termin
             </a>
           </li>
-          <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=61566425155277"
-              target="_blank"
-              ><ion-icon class="social" name="logo-facebook"></ion-icon
-            ></a>
-          </li>
         </ul>
-        <div class="hamburger" id="hamburgerMenu">
-          <ion-icon class="menuOpen" name="menu-outline"></ion-icon>
-          <ion-icon class="menuClose" name="close-outline"></ion-icon>
-        </div>
       </nav>
     </header>
+    <!-- Main content -->
     <main>
       <div id="top" class="container">
         <div class="main-one-left">
