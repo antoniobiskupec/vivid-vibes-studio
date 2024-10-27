@@ -111,6 +111,10 @@ a {
   padding-inline: 1rem;
 }
 
+.logo-text-small {
+  font-size: 1rem;
+}
+
 .primary-header {
   align-items: center;
   justify-content: space-between;
@@ -371,8 +375,8 @@ a {
   font-size: 1.1rem;
 }
 
-.footer-full-white {
-  background-color: white;
+.footer-item:hover {
+  color: rgb(134, 4, 100);
 }
 
 .container-footer-white {
@@ -383,6 +387,10 @@ a {
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
+}
+
+.footer-full-white {
+  background-color: white;
 }
 
 .footer-social {
@@ -540,7 +548,7 @@ a {
   }
 
   .book-button {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .container-two {
