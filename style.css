@@ -104,19 +104,16 @@ a {
 /* primary header */
 
 .logo {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem;
   margin: 1.5rem;
   background: rgba(118, 117, 117, 0.4);
   backdrop-filter: blur(0.4rem);
-  padding-inline: 1rem;
-  -webkit-box-shadow: 1px 10px 34px 3px rgba(134, 4, 100, 0.5);
-  -moz-box-shadow: 1px 10px 34px 3px rgba(134, 4, 100, 0.5);
-  box-shadow: 1px 10px 34px 3px rgba(134, 4, 100, 0.5);
+  padding-inline: 1rem; */
+  margin-left: 2rem;
 }
 
 .logo-text-small {
   font-size: 1rem;
-  padding: 0.5rem;
 }
 
 .primary-header {
@@ -126,7 +123,6 @@ a {
   z-index: 999;
   position: sticky;
   top: 0;
-  margin-right: 1rem;
 }
 
 .mobile-nav-toggle {
@@ -142,9 +138,6 @@ a {
   z-index: 999;
   padding: 1rem;
   font-size: 1.15rem;
-  -webkit-box-shadow: 1px 10px 34px 11px rgba(134, 4, 100, 0.5);
-  -moz-box-shadow: 1px 10px 34px 11px rgba(134, 4, 100, 0.5);
-  box-shadow: 1px 10px 34px 11px rgba(134, 4, 100, 0.5);
 }
 
 @supports (backdrop-filter: blur(0.4rem)) {
@@ -498,12 +491,6 @@ a {
 
 @media only screen and (max-width: 768px) {
   /* header */
-
-  .logo {
-    margin: 1.5rem;
-    background: rgba(118, 117, 117, 0.4);
-    backdrop-filter: blur(0.4rem);
-  }
 
   .primary-navigation {
     gap: 2em;
