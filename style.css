@@ -104,11 +104,6 @@ a {
 /* primary header */
 
 .logo {
-  /* font-size: 1.5rem;
-  margin: 1.5rem;
-  background: rgba(118, 117, 117, 0.4);
-  backdrop-filter: blur(0.4rem);
-  padding-inline: 1rem; */
   margin-left: 2rem;
 }
 
@@ -163,67 +158,45 @@ a {
 /* main content */
 
 .container {
-  background: url(./images/main-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
   height: calc(100dvh - var(--navbar-height));
+  width: 100%;
 }
 
-.main-one-right {
+.main-one {
+  height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  gap: 3rem;
-  color: white;
-}
-
-.main-one-right > p {
+  flex-direction: column;
   font-size: 3rem;
 }
 
 .bold-text {
-  font-weight: bold;
-}
-
-.main-one-left img {
-  width: 100%;
-  height: 90%;
-  max-width: 100%;
-}
-
-.main-one-right span {
-  font-size: 2.5rem;
-  color: white;
-}
-
-.main-one-right-bold {
-  font-weight: 900;
+  font-weight: bolder;
+  padding-bottom: 2rem;
 }
 
 .book-button {
+  font-size: 1.3rem;
   padding: 1rem;
-  border: 1px solid white;
-  color: white;
-  font-size: large;
   background-color: black;
-}
-.book-button:hover {
   color: white;
-  border: solid 1px white;
-  background-color: rgb(134, 4, 100);
+  border: 1px solid white;
+}
+
+.book-button:hover {
+  background-color: white;
+  color: black;
 }
 
 .container-two {
-  padding: 1rem;
+  height: 100svh;
+  padding-top: 1rem;
   color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
+
+  margin-bottom: 2rem;
   transform: translateY(50px);
   transition: all 2s ease-out;
 }
@@ -239,13 +212,11 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 3.5rem;
-  padding: 1rem;
 }
 
 .grid-item {
-  height: 450px;
   border: 1px solid white;
-  margin: 0.5rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,6 +253,7 @@ a {
   display: block;
   margin-bottom: 1em;
   width: 100%;
+  border: 1px solid white;
 }
 
 .container-four-full {
@@ -560,10 +532,9 @@ a {
 
   .container-three {
     margin-top: 2rem;
-    margin-bottom: 2rem;
-    columns: 2 140px;
-    column-gap: 1rem;
-    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    columns: 2 130px;
+    padding: 0.2rem;
   }
 
   .container-four {
@@ -579,5 +550,9 @@ a {
   .container-contact {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .image-stack {
+    display: block;
   }
 }
